@@ -1,0 +1,729 @@
+Калькуляторы фигур
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>    
+    <h1>Калькулятор</h1>
+        <div>
+            <input type="text" class="side" placeholder="Введите длину стороны квадрата" />
+            <button class="create-btn">расчёт</button>
+        </div>
+    <h2>Результат</h2>
+    <ul class="result"></ul>
+    <script src="index.js"></script>
+  </body>
+</html> -->
+
+<!-- 2
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>    
+    <h1>Калькулятор</h1>
+        <div>
+            <input type="text" class="side" placeholder="Введите длину стороны треугольника" />
+            <button class="create-btn">расчёт</button>
+        </div>
+    <h2>Результат</h2>
+    <ul class="result"></ul>
+    <script>
+    document.querySelector('.create-btn').addEventListener('click', function(){
+    const val = document.querySelector('.side').value || 0;
+    document.querySelector('.result').innerHTML = 'Периметр: ' + val * 3 + '<br />' + 'Площадь: ' + (val * val) / 2;
+    });
+    </script> -->
+
+    <!--3
+         <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+    </body>
+    </html> -->
+
+<!-- 4
+	<!DOCTYPE HTML>
+    <html>
+<head>
+    <meta charset="utf-8">
+    <title>focusout</title>
+</head>
+<body>
+<p><input type="text" placeholder="Ширина треугольника" id="width"></p>
+<p><input type="text" placeholder="Длина треугольника" id="length"></p>
+<p><input type="text" placeholder="Высота треугольника" id="height"></p>
+<hr>
+<button id="go">Вычислить</button>
+<p><input type="text" id="area" disabled>Площадь треугольника:</p>
+<script src="index.js"></script>
+</body>
+</html>
+ -->
+
+ Математические калькуляторы на JavaScript
+
+<!--1  
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадратное уравнение</title>
+</head>
+<body>
+    <h2>Введите коэффициенты квадратного уравнения:</h2>
+
+    <label for="a">a:</label>
+    <input type="number" id="a" step="any" placeholder="Введите коэффициент a">
+
+    <label for="b">b:</label>
+    <input type="number" id="b" step="any" placeholder="Введите коэффициент b">
+
+    <label for="c">c:</label>
+    <input type="number" id="c" step="any" placeholder="Введите коэффициент c">
+
+    <button onclick="solveQuadratic()">Решить</button>
+
+    <p id="result"></p>
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список делителей числа</title>
+</head>
+<body>
+    <input type="number" id="numberInput">
+    <button onclick="findDivisors()">Найти делители</button>
+    <p id="result"></p>
+    <script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+<!-- 4
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список общих делителей</title>
+</head>
+<body>
+    <input type="number" id="number1Input">
+    <input type="number" id="number2Input">
+    <button onclick="findCommonDivisors()">Найти общие делители</button>
+    <p id="result"></p>
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 5
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наибольший общий делитель</title>
+</head>
+<body>
+    <input type="number" id="number1Input">
+    <input type="number" id="number2Input">
+    <button onclick="findGreatestCommonDivisor()">Найти наибольший общий делитель</button>
+    <p id="result"></p>
+    <script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 6
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наименьшее число, делящееся на оба числа</title>
+</head>
+<body>
+    <input type="number" id="number1Input">
+    <input type="number" id="number2Input">
+    <button onclick="findLeastCommonMultiple()">Найти наименьшее число</button>
+    <p id="result"></p>
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!-- 7
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Угадай число</title>
+</head>
+<body>
+    <h1>Угадай число от 1 до 100!</h1>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Проверить</button>
+    <p id="result"></p>
+    <script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+Игра угадай ячейку
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .cell {
+        height: 60px; width: 80px; display: inline-block;
+        border: 2px solid grey; font-size: 40px;
+        vertical-align: top; margin-bottom: 5px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div>
+    <div class="cell">0</div><br>
+
+    <p id="timer">Время: <span id="countdown">60</span> сек</p>
+    <table id="gameTable"></table>
+ 
+    <script src="index.js">
+    </script>
+    
+</body>
+</html> -->
+
+
+Экранная клавиатура
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Экранная клавиатура</title>
+    <style src="style.css"></style>
+    
+</head>
+<body>
+    <div class="keyboard">
+        <div class="key-row">
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">0</div>
+        </div>
+        <div class="key-row">
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+        </div>
+        <div class="key-row">
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+        </div>
+        <div class="key-row">
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+        </div>
+    </div>
+    <div class="input">
+        <input type="text" class="text-input" id="inputText" readonly>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- календарь
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Календарь</title>
+    <style src="style.css">
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Календарь</h2>
+        <h3>
+            <span id="month"></span> 
+            <span id="year"></span>
+        </h3>
+    </div>
+    
+    <div class="navigation">
+        <a href="#" id="prev-month">← Назад</a>
+        <a href="#" id="next-month">Вперед →</a>
+    </div>
+
+    <ul id="calendar"></ul>
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+Поиск тегов на JavaScript
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Определение тега</title>
+</head>
+<body>
+  <input type="text" id="tagInput" placeholder="Введите имя тега">
+  <button onclick="findTagDescription()">Поиск</button>
+  <div id="tagDescription"></div>
+
+  <script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Исторические события</title>
+  <style src="style.css"></style>
+</head>
+<body>
+
+  <h1>Исторические события</h1>
+  
+  <label for="yearInput">Введите год:</label>
+  <input type="number" id="yearInput" min="1000" max="9999">
+  <button onclick="getEvents()">Поиск</button>
+
+  <table id="eventsTable">
+    <thead>
+      <tr>
+        <th>Дата</th>
+        <th>Название</th>
+        <th>Описание</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+гороскоп
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гороскоп</title>
+  <style src="style.css"></style>
+
+</head>
+<body>
+
+<h1>Гороскоп на сегодня</h1>
+
+<label for="birthdate">Введите дату рождения:</label>
+<input type="date" id="birthdate" required>
+<button onclick="getHoroscope()">Получить гороскоп</button>
+
+<br><br>
+
+<label>Выберите день:</label>
+<input type="radio" id="today" name="day" value="today" checked>
+<label for="today">Сегодня</label>
+
+<input type="radio" id="tomorrow" name="day" value="tomorrow">
+<label for="tomorrow">Завтра</label>
+
+<input type="radio" id="dayAfterTomorrow" name="day" value="dayAfterTomorrow">
+<label for="dayAfterTomorrow">Послезавтра</label>
+
+<div id="horoscopeResult"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+<!--автодополнение
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="country-input" placeholder="Введите название страны">
+<ul id="country-list"></ul>
+</body>
+</html> -->
+
+<!-- спойлеры
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="toggle">Показать спойлер</a>
+    <div class="spoiler">Сам спойлер</div>
+</body>
+</html> -->
+
+<!-- вкладки
+<a href="#" class="tab-link">Вкладка 1</a>
+<a href="#" class="tab-link">Вкладка 2</a>
+<a href="#" class="tab-link">Вкладка 3</a>
+
+<div class="tab-content">Содержимое вкладки 1</div>
+<div class="tab-content">Содержимое вкладки 2</div>
+<div class="tab-content">Содержимое вкладки 3</div> -->
+
+<!-- аккордеон
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+          <a class="accordion-link" href="#">Раздел 1</a>
+          <div class="accordion-content">
+            <p>Содержимое раздела 1</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a class="accordion-link" href="#">Раздел 2</a>
+          <div class="accordion-content">
+            <p>Содержимое раздела 2</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a class="accordion-link" href="#">Раздел 3</a>
+          <div class="accordion-content">
+            <p>Содержимое раздела 3</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html> -->
+
+
+<!-- Игра в города
+    
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Игра в города</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Игра в города</h1>
+	<p>Введите город:</p>
+	<input type="text" id="inputCity">
+	<button onclick="nextCity()">Дальше</button>
+	<div id="output"></div>
+	<script src="script.js"></script>
+</body>
+</html> -->
+
+<!-- \чеклист 
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список дел</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Список дел</h1>
+  <div id="todo-list">
+  </div>
+  <div id="wrapper">
+	<input id="input"><br>
+	<ul id="list"></ul>
+    </div>
+  <input type="text" id="new-todo" placeholder="Добавить новое дело">
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+<!-- калькулятор продуктов
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор продуктов</title>
+</head>
+<body>
+  <h1>Калькулятор продуктов</h1>
+  <label for="product1">Продукт 1: </label>
+  <input type="number" id="product1" value="0"><br>
+  <label for="product2">Продукт 2: </label>
+  <input type="number" id="product2" value="0"><br>
+  <label for="product3">Продукт 3: </label>
+  <input type="number" id="product3" value="0"><br>
+  <button onclick="calculateTotal()">Рассчитать</button><br>
+  <h2>Общая стоимость: <span id="totalPrice">0</span></h2>
+</body>
+</html> -->
+
+
+<!-- Слайдер текста
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Slider</title>
+  <style src="style.css">
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="text-container">
+      <div class="text">Text 1</div>
+      <div class="text">Text 2</div>
+      <div class="text">Text 3</div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- Слайдер картинок
+<!DOCTYPE html>
+<html>
+<head>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div class="slider">
+  <img class="slide" src="image1.jpg" />
+  <img class="slide" src="image2.jpg" />
+  <img class="slide" src="image3.jpg" />
+  <span class="prev" onclick="plusSlide(-1)">&#10094;</span>
+  <span class="next" onclick="plusSlide(1)">&#10095;</span>
+</div>
+
+<script src="index.js"></script>
+
+
+</body>
+</html> -->
+
+Kpecтики-нолики
+<!--
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Крестики-нолики</title>
+  <style src="style.css"></style>
+</head>
+<body>
+  <div class="game">
+    <div class="row">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div class="row">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div class="row">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- смена цветов
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Switch Game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style src="style.css"
+<body>
+	<div class="game-container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html> -->

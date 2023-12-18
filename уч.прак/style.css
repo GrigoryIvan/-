@@ -1,0 +1,307 @@
+/* экранная клавиатура
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #999;
+    padding: 5px;
+    font-size: 16px;
+} */
+
+
+
+/* календарь
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
+
+li.highlighted {
+    background-color: yellow;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+} */
+
+/* Поиск исторических событий на Java Script
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  table {
+    width: 100%!;(MISSING)
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  } */
+
+
+  
+  /* гороскоп
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  label {
+    margin-right: 10px;
+  } */
+
+  /* автодополнение
+#country-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #country-list li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+  } */
+
+/* спойлеры
+  .spoiler {
+    display: none;
+  }
+  
+  .spoiler.active {
+    display: block;
+  } */
+
+
+  /* аккордеон
+  .accordion {
+    width: 100%;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-link {
+    display: block;
+    padding: 10px;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  } */
+
+
+  /* игра в города
+  body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-top: 20px;
+}
+p {
+	margin-top: 30px;
+	font-size: 24px;
+}
+input[type=text] {
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+#output {
+	font-size: 24px;
+	margin-top: 20px;
+} */
+
+
+/* чеклист
+body {
+	text-align: center;
+}
+
+#input, #list {
+	display: inline-block;
+}
+
+#list {
+	padding: 0;
+	list-style-type: none;
+}
+#list span {
+	margin-right: 5px;
+}
+#list .remove, #list .mark {
+	color: blue;
+	cursor: pointer;
+}
+#list .remove:hover, #list .mark:hover {
+	text-decoration: underline;
+}
+
+#list .done .task {
+	text-decoration: line-through;
+}*/
+
+/* слайдер текста
+.slider {
+  overflow: hidden;
+}
+.text-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.text {
+  flex: 0 0 100%;
+} */
+
+
+/* слайдер картинок
+.slider {
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider img {
+  max-width: 100%;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+} */
+
+/* Kpecтики-нолики
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .row {
+    display: flex;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .cell:hover {
+    background-color: #f2f2f2;
+  } */
+
+  /* смена цветов
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .square {
+    height: 100px;
+    width: 100px;
+    background-color: #FFC300;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .square:last-child {
+    margin-right: 0;
+  } */
