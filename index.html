@@ -1,0 +1,1593 @@
+<!--Единицы измерения в атрибуте style в JavaScript
+  1
+     <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<div id="myDiv"></div>
+<button onclick="changeSize()">Изменить размер</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="elem" style="width: 300px; height: 200px;">
+	text
+</div>
+<button onclick="showSize()">Показать размер</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="elem" style="font-size: 1.5em;">text</div>
+<button onclick="showFontSize()">Показать размер шрифта</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ошибки с единицами измерения в JavaScript
+1 
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div style="font-size: 16px;">text</div>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div style="font-size: 16px;">text</div>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div style="font-size: 2.5 em;">text</div>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Size</title>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="elem" style="width: 300px; height: 200px; border: 1px solid red;">
+  text
+</div>
+
+<button onclick="increaseSize()">Увеличить размер</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 5
+<!DOCTYPE html>
+<html>
+<head>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="elem">
+  text
+</div>
+
+<button id="btn" onclick="increaseSize()">Увеличить</button>
+
+<script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Распаковка значений CSS свойств в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="elem">text</div>
+
+<button id="btn" onclick="showBorderDetails()">Показать границу</button>
+
+<script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!-- Сброс стилей через style в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="elem">text</div>
+
+<button onclick="hideElement()">Спрятать див</button>
+<button onclick="showElement()">Показать див</button>
+
+<script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="elem">text</div>
+
+<button onclick="changeColor('red')">Красный цвет</button>
+<button onclick="changeColor('black')">Исходный цвет</button>
+
+<script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Массовая установка стилей в JavaScript
+1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Проблемы чтения стилей в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="elem" style="width: 200px; height: 200px; border: 1px solid black;"></div>
+
+<button onclick="showSize()">Показать размер</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="elem" style="width: 200px; height: 200px; background-color: lightblue;"></div>
+
+<button onclick="increaseSize()">Увеличить размер</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!--  Чтение свойств из CSS файлов в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="elem" style="font-size: 2em;">Текст</div>
+<button onclick="getSize()">Получить размер шрифта</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!--  Преобразование прочитанных значений в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+<style src="style.css"></style>
+</head>
+<body>
+
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+
+<script src="index.js"></script>
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Стилизация классами в JavaScript
+  1
+<!DOCTYPE html>
+<html>
+<head>
+<style src="style.css"></style>
+</head>
+<body>
+
+<p onclick="changeColor(this)">Абзац 1</p>
+<p onclick="changeColor(this)">Абзац 2</p>
+<p onclick="changeColor(this)">Абзац 3</p>
+<p onclick="changeColor(this)">Абзац 4</p>
+<p onclick="changeColor(this)">Абзац 5</p>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Один класс для стилизации в JavaScrip
+  1
+<!DOCTYPE html>
+<html>
+<head>
+<style src="style.css"></style>
+</head>
+<body>
+
+<input type="text" id="inputField" onblur="checkInputLength(this)">
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Неудобство классов в JavaScript
+  1
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style src="style.css"></style>
+  <title>Input Color</title>
+</head>
+<body>
+  <input type="text" id="numberInput">
+  
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Чередование стилей через data- атрибут в JavaScript
+  1
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script src="index.js"></script>
+</head> 
+<body> 
+  <div id="myElement" style="width: 200px; height: 100px; background-color: lightblue;">
+  </div> 
+  <button id="btn">Get Element Size</button>
+ </body> 
+ </html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Размеры элемента с прокруткой в JavaScript
+  1
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="index.js"></script>
+</head>
+<body>
+   <div id="myElement" style="width: 200px; height: 100px; background-color: lightblue;"></div>
+   <button onclick="showElementSize()">Получить размер</button>
+</body>
+</html> -->
+
+<!-- 2
+Если отнять от полной ширины клиентскую ширину, то получится размер рамки (border) и внешний отступ (margin) элемента, которые не входят в клиентскую ширину. -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Полный размер элемента в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример</title>
+</head>
+<body>
+  <div id="myElement" style="width: 200px; height: 200px; overflow: scroll;">Текст текст текст текст текст текст текст текст текст текст текст текст текст</div>
+  <button id="myButton">Показать размеры</button>
+
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 2
+Если отнять от высоты с прокруткой (scrollHeight) полную высоту (offsetHeight), то мы получим высоту самой полосы прокрутки. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Прокрутка элементов в JavaScript
+  1
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Прокрутка элемента</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div id="myElement" style="height: 200px; width: 300px; overflow-y: scroll;">
+    текст рыба текст рыба текст рыба текст рыба текст рыба м текст рыбам
+  </div>
+  <button onclick="getScrollPosition()">Узнать прокрутку</button>
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Проверка прокрутки элемента</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div id="myElement" style="height: 200px; width: 300px; overflow-y: scroll;">
+    текст рыба текст рыба текст рыба текст рыба текст рыба м текст рыбам
+  </div>
+  <button onclick="checkScrollPosition()">Проверить прокрутку</button>
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Проверка полной прокрутки элемента</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div id="myElement" style="height: 200px; width: 300px; overflow-y: scroll;">
+    текст рыба текст рыба текст рыба текст рыба текст рыба м текст рыбам
+  </div>
+  <button onclick="checkFullScroll()">Показать полную прокрутку</button>
+</body>
+</html> -->
+
+<!-- 4
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myElement" style="height:200px; overflow:scroll;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 5
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll Height Calculation</title>
+</head>
+<body>
+    <div id="content" style="height: 500px; overflow: auto;">
+        ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Изменение прокрутки элемента в JavaScript
+  1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll Element</title>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="element">
+  yyyyyyyyyyyyyyhhhhhhhhhhgggggggggttttttttt
+  hhhh
+</div>
+
+<button id="scrollButton">Прокрутить</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style src="style.css"></style>
+    <title>Scroll Element</title>
+</head>
+<body>
+    <div id="scrollableElement">
+        <p>This is a scrollable element. Click the button to scroll down.</p>
+    </div>
+    <button onclick="scrollElement()">Scroll 50px Down</button>
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+    <style src="style.css"></style>
+</head>
+<body>
+    <div id="scrollableElement">
+        55555556666666777777888888899999
+    </div>
+
+    <button onclick="scrollToTop()">Прокрутить вверх</button>
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style src="style.css"></style>
+  <title>Scroll to Bottom</title>
+</head>
+<body>
+  <div id="scrollableElement">
+    
+  </div>
+  <button onclick="scrollToBottom()">Прокрутить вниз</button>
+
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- Прокрутка элемента до конца в JavaScript
+  1
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll to Bottom</title>
+  <style src="style.css">
+  </style>
+</head>
+<body>
+  <div class="scrollable-element">
+  </div>
+  <button onclick="scrollToBottom()">Прокрутить вниз</button>
+
+  <script src="index.js">
+  </script>
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проверка прокрутки элемента</title>
+  <style src="style.css">
+  </style>
+</head>
+<body>
+  <div class="element">
+    <p>Some long content here that will make the element scrollable</p>
+  </div>
+  <button id="checkButton">Проверить прокрутку</button>
+
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- Распахивание элемента в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Распахнуть элемент</title>
+  <style src="style.css"></style>
+</head>
+<body>
+
+<div id="myElement">
+  <p>Это распахнутый элемент</p>
+</div>
+
+<button id="myButton">Распахнуть</button>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+<!-- Ширина полосы прокрутки в JavaScript
+1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="getScrollbarWidth()">Получить ширину полосы прокрутки</button>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- Размеры окна в JavaScript
+
+1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="getWindowSize()">Получить размер окна</button>
+
+</body>
+</html> -->
+
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="checkScroll()">Проверить наличие вертикальной прокрутки</button>
+
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="checkScroll()">Проверить наличие горизонтальной прокрутки</button>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- Размеры окна с учетом прокрутки в JavaScript
+
+1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="showHeight()">Показать высоту с учетом прокрученной части</button>
+
+</body>
+</html> -->
+
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="showWidth()">Показать ширину с учетом прокрученной части</button>
+
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="showHiddenHeight()">Показать высоту спрятанной части под прокруткой</button>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Получение прокрутки окна в JavaScript -->
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+<button onclick="showVerticalScroll()">Показать сколько прокручено по вертикали</button>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="showRemainingScroll()">Показать сколько осталось прокрутить до конца</button>
+
+</body>
+</html> -->
+
+
+
+<!-- Получение и изменение прокрутки окна в JavaScript -->
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToPosition()">Прокрутить на 300px сверху</button>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToPosition()">Прокрутить на 100px снизу</button>
+
+</body>
+</html> -->
+
+
+<!--3
+  <!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToTop()">Прокрутить на самый верх</button>
+
+</body>
+</html> -->
+
+
+<!-- 4
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToBottom()">Прокрутить на самый низ</button>
+
+</body>
+</html> -->
+
+
+<!-- Метод для прокрутки окна в положение в JavaScript -->
+
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToPosition()">Прокрутить в позицию 300px сверху</button>
+
+</body>
+</html> -->
+
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToTop()">Плавно прокрутить в самый верх</button>
+
+</body>
+</html> -->
+
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollToBottom()">Плавно прокрутить в самый низ</button>
+
+</body>
+</html> -->
+
+
+
+<!-- Метод для прокрутки окна на величину в JavaScript -->
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollDown()">Прокрутить на 100px вниз</button>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollUp()">Прокрутить на 100px вверх</button>
+
+</body>
+</html> -->
+
+<!-- 3
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollDown()">Прокрутить на 300px вниз</button>
+
+</body>
+</html> -->
+
+
+
+<!-- 4
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<button onclick="scrollUp()">Прокрутить на 300px вверх</button>
+
+</body>
+</html> -->
+
+
+<!-- Метод для прокрутки окна к элементу в JavaScript -->
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+
+<h1>Пример страницы с элементом</h1>
+
+<p>Некоторый текст</p>
+
+<div id="myElement" style="height: 500px; background-color: lightgrey;">
+  <h2>Это целевой элемент</h2>
+</div>
+
+<button onclick="scrollToElement()">Прокрутить к элементу</button>
+
+<p>Еще немного текста</p>
+
+</body>
+</html> -->
+
+
+
+<!-- Событие прокрутки в JavaScript -->
+
+<!-- 1 
+<!DOCTYPE html>
+<html>
+<head>
+  <style src="index.js"></style>
+</head>
+<body>
+  <div id="content">
+    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  </div>
+
+  <div id="bottom-message">
+    Вы достигли конца страницы. Спасибо за посещение!
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- Коллекции Map в JavaScript -->
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="output"></p>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Collection</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!-- Ключи и значения в коллекциях Map -->
+
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Keys Array</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Iteration</title>
+</head>
+<body>
+    <script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+<!-- Применение коллекций Map -->
+
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Click Example</title>
+</head>
+<body>
+  <input type="text" id="input1">
+  <input type="text" id="input2">
+  <input type="text" id="input3">
+
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!--2
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Input Array</title>
+</head>
+<body>
+
+<input id="input1" type="number" onkeypress="addNumber(event, 'input1')">
+<input id="input2" type="number" onkeypress="addNumber(event, 'input2')">
+<input id="input3" type="number" onkeypress="addNumber(event, 'input3')">
+<script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- Коллекции Set в JavaScript -->
+<!-- 1
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+
+<!-- Начальное заполнение коллекции Set в JavaScript -->
+<!-- 1
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Collection</title>
+</head>
+<body>
+	<script src="index.js"></script>
+
+</body>
+</html> -->
+
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Collection</title>
+</head>
+<body>
+  <script src="index.js">
+  </script>
+</body>
+</html> -->
+
+
+<!-- Полезные возможности коллекций Set -->
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Collection</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Collection</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!-- Перебор коллекций Set циклом -->
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Collection</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body> -->
+
+
+<!-- Преобразование коллекций Set -->
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set to Array</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array to Set</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- Удаление дублей из массива через Set -->
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove Duplicates from Array</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- Получение DOM элементов без дублей -->
+
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Exclamation Marks</title>
+</head>
+<body>
+  <p onclick="addExclamation(this)">Абзац 1</p>
+  <p onclick="addExclamation(this)">Абзац 2</p>
+  <p onclick="addExclamation(this)">Абзац 3</p>
+  <button onclick="addExclamationMarks()">Добавить восклицательный знак</button>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- Сходство с массивами в JavaScript -->
+<!-- 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="index.js"></script>
+</body>
+</html> -->
+
+<!-- Типы псевдомассивов в JavaScript -->
+
+<!-- 1
+Свойство childNodes содержит коллекцию NodeList. -->
+<!-- 2
+Свойство children содержит коллекцию HTMLCollection. -->
+<!-- 3
+Метод getElementsByClassName возвращает коллекцию HTMLCollection. -->
+
+
+<!-- Разница между типами псевдомассивов в JavaScript -->
+<!-- 2
+<div id="parent">
+  <p>Child 1</p>
+  <p>Child 2</p>
+</div>
+
+<script src="index.js"></script> -->
+
+
+<!-- Итерируемые объекты в JavaScript
+
+
+Массивы (Array) - массивы в JavaScript являются итерируемыми объектами, их можно перебирать с помощью цикла for...of.
+
+Строки (String) - строки также являются итерируемыми объектами, каждый символ строки может быть доступен по индексу.
+
+Map - коллекция Map в JavaScript также является итерируемым объектом, итерация происходит по парам ключ-значение.
+
+Set - коллекция Set также является итерируемым объектом, перебор элементов происходит в порядке добавления.
+
+Генераторы (Generators) - функции-генераторы в JavaScript также являются итерируемыми объектами. -->
+
+
+<!-- Нумерация DOM элементов в JavaScript-->
+
+<!--1
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Нумерация ячеек таблицы</title>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+        </tr>
+        <tr>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+
+<!-- Количество записей в localStorage в JavaScript
+
+1
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Local Storage Count</title> 
+    </head> 
+    <body> 
+      <button id="countBtn">Count Local Storage</button>
+  <script>
+      const countBtn = document.getElementById('countBtn');
+  
+      countBtn.addEventListener('click', () => {
+          const count = localStorage.length;
+          alert(`Number of items in local storage: ${count}`);
+      });
+  </script>
+  </body> 
+</html> -->
+
+
+<!-- 2
+<!DOCTYPE html>
+<html lang="en"> 
+  <head> <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Local Storage Count & Clear</title> 
+  </head> 
+  <body> 
+    <button id="checkCountBtn">Check Local Storage Count</button>
+  
+  <script>
+      const checkCountBtn = document.getElementById('checkCountBtn');
+  
+      checkCountBtn.addEventListener('click', () => {
+          const count = localStorage.length;
+          console.log(`Number of items in local storage: ${count}`);
+  
+          if (count > 10) {
+              localStorage.clear();
+              console.log('Local storage cleared.');
+          }
+      });
+  </script>
+  </body> 
+  </html> -->
+
+<!--Хранение структур в localStorage в JavaScript
+  
+  2
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Локальное хранилище</title>
+  </head>
+  <body>
+      <input id="input1" type="text">
+      <input id="input2" type="text">
+  
+      <script src="index.js">
+      </script>
+  </body>
+  </html> -->
+
+<!-- Практика на localStorage в JavaScript -->
+
+
+  <!-- 2
+    
+  <!DOCTYPE html> 
+  <html> 
+    <head> 
+      <title>Блокнот</title> 
+    </head> 
+    <body> 
+      <div> 
+        <div style="float:left; width:30%;"> 
+          <ul id="notes-list"></ul> 
+        </div> 
+        <div style="float:left; width:70%;"> 
+          <textarea id="note-text" style="width:100%; height:300px;">
+          </textarea><br /> 
+          <button onclick="saveNote()">Сохранить</button>
+         </div> </div>
+        <script src="index.js"></script>
+           </body> 
+           </html> -->
+
+<!-- 
+3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stickers</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <textarea id="textarea" placeholder="Enter your text here"></textarea>
+    <button id="add-button">Add Sticker</button>
+    <div id="stickers-container"></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
